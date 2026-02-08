@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Lazana ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    text-align: center;
+}
+.container {
+    padding: 40px 20px;
+}
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+.heart {
+    font-size: 3.5rem;
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+button {
+    margin: 20px;
+    padding: 15px 32px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.yes {
+    background: #fff;
+    color: #ff4b7d;
+    font-weight: bold;
+}
+.no {
+    background: #ff4b7d;
+    color: #fff;
+}
+.footer {
+    margin-top: 40px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+.music {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="heart">❤️</div>
+
+    <h1>Lazana ❤️</h1>
+
+    <p>
+        Shayad tumhe pata na ho,<br>
+        par jab se tum meri zindagi mein aayi ho,<br>
+        har cheez zyada khoobsurat lagne lagi hai.
+        <br><br>
+        Tumhari muskaan mein sukoon hai,<br>
+        tumhari baaton mein apnapan,<br>
+        aur tumhari maujoodgi mein ek ghar jaisa ehsaas.
+        <br><br>
+        “Tujhe zameen pe bulaya gaya hai mere liye…”  
+        <br>
+        Aur mujhe yakeen hai — tum mere liye hi ho.
+    </p>
+
+    <h1>Will you be mine forever? 💍</h1>
+
+    <button class="yes" onclick="yesClick()">YES ❤️</button>
+    <button class="no" onmouseover="moveButton(this)">NO 😅</button>
+
+    <div class="music">
+        🎶 Song: <i>Tujhe zameen pe bulaya gaya hai mere liye</i>
+    </div>
+
+    <div class="footer">
+        With all my heart, always 💖
+    </div>
+</div>
+
+<!-- Background Music -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/0n2jF0Fj0T8?autoplay=1&loop=1&playlist=0n2jF0Fj0T8"
+allow="autoplay">
+</iframe>
+
+<script>
+function yesClick() {
+    document.body.innerHTML = `
+    <div style="padding:70px; text-align:center; color:white;">
+        <h1>She Said YES!!! 😍💍</h1>
+        <p style="font-size:1.4rem; max-width:600px; margin:auto;">
+            Lazana, this moment is forever engraved in my heart.<br><br>
+            I promise to choose you — in every lifetime, every version of me ❤️
+        </p>
+        <div style="font-size:2.5rem; margin-top:20px;">❤️❤️❤️</div>
+    </div>`;
+}
+
+function moveButton(btn) {
+    btn.style.position = 'absolute';
+    btn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+    btn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+}
+</script>
+
+</body>
+</html>
